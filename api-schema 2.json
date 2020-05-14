@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "total_count": 0,
+            "incomplete_results": false,
+            "items": []
+        }
+    ],
+    "required": [
+        "total_count",
+        "incomplete_results",
+        "items"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "total_count": {
+            "$id": "#/properties/total_count",
+            "type": "integer",
+            "title": "The total_count schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        },
+        "incomplete_results": {
+            "$id": "#/properties/incomplete_results",
+            "type": "boolean",
+            "title": "The incomplete_results schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "items": {
+            "$id": "#/properties/items",
+            "type": "array",
+            "title": "The items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                []
+            ],
+            "additionalItems": true,
+            "items": 
+            {     
+                "default": [],       
+                "$id": "#/properties/items/items"
+            }
+        }
+    }
+}

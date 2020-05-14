@@ -1,0 +1,25 @@
+{ 
+"properties": 
+    { 
+    "name":
+        { 
+            "type": "string", "description": "Name of the repository" 
+        }, 
+            "url": 
+        {
+            "type": "string", "description": "URL to the repository" 
+        }, 
+            "description": 
+        { 
+            "type": ["string", "null"], "description": "Description of the repository" 
+        }, 
+            "fork": 
+        { 
+            "type": "boolean", "description": "Whether or not the repository is a fork of another repository" 
+        }, 
+            "stargazers_count": 
+        { 
+            "type": "number", "format": "decimal", "description": "Number of times the repository has been starred by users" 
+        } 
+    } 
+} 
